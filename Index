@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ספריה צוף - הדגמת AR | שמרת הזורע</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="images/shw_logo.png" alt="לוגו שמרת הזורע" class="logo">
+    </header>
+
+    <main class="product-page">
+        <div class="product-images">
+            <img src="images/shimrat_hazorea_tsuf_bookcase_main.jpg" alt="ספריית צוף" class="main-image">
+            <div class="thumbnail-images">
+                <img src="images/shimrat_hazorea_tsuf_bookcase_thumb1.jpg" alt="צפיה מקרוב 1" class="thumbnail active">
+                <img src="images/shimrat_hazorea_tsuf_bookcase_thumb2.jpg" alt="צפיה מקרוב 2" class="thumbnail">
+                <img src="images/shimrat_hazorea_tsuf_bookcase_thumb3.jpg" alt="צפיה מקרוב 3" class="thumbnail">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1 class="product-title">ספריית צוף </h1>
+            <p class="product-description">
+                ספריית כוורת בעיצוב מודרני מבית שמרת הזורע. הספרייה מעוצבת בקווים נקיים ומשלבת אחסון נוח.
+                היא מתאימה לסלון, חדר שינה או משרד.
+            </p>
+            <div class="product-price">
+                <span class="price">2,490 ₪</span>
+                <span class="currency">₪</span>
+            </div>
+
+            <button id="ar-viewer-button" class="ar-button">
+                <span>צפו ב-3D וב-AR בביתכם</span>
+                <img src="images/ar_icon.png" alt="AR Icon">
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
