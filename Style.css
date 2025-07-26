@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+    background-color: #f5f5f5;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 200px;
+}
+
+.product-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+@media (min-width: 768px) {
+    .product-page {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.product-images {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.main-image {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    width: 30%;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.thumbnail.active {
+    border-color: #007bff; /* Highlight color */
+}
+
+.product-details {
+    width: 100%;
+    max-width: 500px;
+}
+
+.product-title {
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.product-description {
+    line-height: 1.6;
+    color: #555;
+}
+
+.product-price {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.ar-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: #007bff; /* Main button color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ar-button:hover {
+    background-color: #0056b3;
+}
+
+.ar-button img {
+    margin-right: 10px;
+    height: 24px;
+}
