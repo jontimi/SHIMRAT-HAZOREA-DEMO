@@ -1,23 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const mainImage = document.querySelector('.main-image');
-    const thumbnails = document.querySelectorAll('.thumbnail');
+document.addEventListener('DOMContentLoaded', function() {
     const arButton = document.getElementById('ar-viewer-button');
+    const arPopup = document.getElementById('ar-popup');
+    const closeButton = document.querySelector('.close-button');
+    const arIframe = document.getElementById('ar-iframe');
 
-    // Handle thumbnail clicks
-    thumbnails.forEach(thumbnail => {
-        thumbnail.addEventListener('click', () => {
-            // Update the main image source
-            mainImage.src = thumbnail.src;
+    const arDemoUrl = 'https://jontimi.github.io/3dModelARviewer/';
 
-            // Update the active class for styling
-            thumbnails.forEach(t => t.classList.remove('active'));
-            thumbnail.classList.add('active');
+    if (arButton && arPopup && closeButton && arIframe) {
+        arButton.addEventListener('click', function(event) {
+            event.preventDefault();
+            arIframe.src = arDemoUrl; // טעינת ה-URL לתוך ה-iframe
+            arPopup.style.display = 'flex'; // הצגת חלונית הפופ-אפ
         });
-    });
 
-    // Handle the AR viewer button click
-    arButton.addEventListener('click', () => {
-        const arViewerUrl = 'https://jontimi.github.io/3dModelARviewer/?model=path_to_your_shimrat_hazorea_tsuf_model.glb';
-        window.open(arViewerUrl, '_blank');
-    });
+        closeButton.addEventListener('click', function() {
+            arPopup.style.display = 'none'; // הסתרת חלונית הפופ-אפ
+            arIframe.src = 'about:blank'; // איפוס ה-iframe כדי למנוע טעינה ברקע
+        });
+    }
 });

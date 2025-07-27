@@ -8,37 +8,21 @@
 </head>
 <body>
 
-    <header>
-        <img src="images/shw_logo.png" alt="לוגו שמרת הזורע" class="logo">
-    </header>
+    <div class="demo-container">
+        <img src="images/shimrat_hazorea_tsuf_bookcase_product_page_demo.png" alt="דף מוצר שמרת הזורע - ספריה צוף" class="demo-image">
+        <button id="ar-viewer-button" class="ar-button">
+            <span>3D / AR</span>
+        </button>
+    </div>
 
-    <main class="product-page">
-        <div class="product-images">
-            <img src="images/shimrat_hazorea_tsuf_bookcase_main.jpg" alt="ספריית צוף" class="main-image">
-            <div class="thumbnail-images">
-                <img src="images/shimrat_hazorea_tsuf_bookcase_thumb1.jpg" alt="צפיה מקרוב 1" class="thumbnail active">
-                <img src="images/shimrat_hazorea_tsuf_bookcase_thumb2.jpg" alt="צפיה מקרוב 2" class="thumbnail">
-                <img src="images/shimrat_hazorea_tsuf_bookcase_thumb3.jpg" alt="צפיה מקרוב 3" class="thumbnail">
-            </div>
+    <div id="ar-popup" class="popup-overlay">
+        <div class="popup-content">
+            <button class="close-button">&times;</button>
+            <iframe id="ar-iframe" src="about:blank" frameborder="0"></iframe>
         </div>
-
-        <div class="product-details">
-            <h1 class="product-title">ספריית צוף </h1>
-            <p class="product-description">
-                ספריית כוורת בעיצוב מודרני מבית שמרת הזורע. הספרייה מעוצבת בקווים נקיים ומשלבת אחסון נוח.
-                היא מתאימה לסלון, חדר שינה או משרד.
-            </p>
-            <div class="product-price">
-                <span class="price">2,490 ₪</span>
-                <span class="currency">₪</span>
-            </div>
-
-            <button id="ar-viewer-button" class="ar-button">
-                <span>צפו ב-3D וב-AR בביתכם</span>
-                <img src="images/ar_icon.png" alt="AR Icon">
-            </button>
-        </div>
-    </main>
+    </div>
+    
+    <img src="images/cart-bar.PNG" alt="סרגל קניות" class="cart-bar">
 
     <script src="script.js"></script>
 </body>
